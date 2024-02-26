@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../assets/font-awesome-4.7.0/css/font-awesome.css">
+
+<div class="container">
+    <h1>Welcome!</h1>
+    <h3>Which room do you need?</h3>
+
+    <div class="row card-group">
+        <div class="col-4" style="padding-bottom: 1%;"  *ngFor="let room of roomList">
+            <div class="card">
+                <img class="card-img-top" src="../../../assets/roomImgs/Sala Conference A.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" >{{room.roomName}}</h5>
+                    <p class="card-text"><fa-icon [icon]="faUsersLine"></fa-icon> | {{room.roomCapacity}}</p>
+                    <a href="#" [routerLink]="['/room', room.roomID]" class="btn btn-primary">Enter room</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
