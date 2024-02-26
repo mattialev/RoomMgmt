@@ -1,0 +1,6 @@
+@RoomMgmtBackend_HostAddress = http://localhost:5249
+
+GET {{RoomMgmtBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
